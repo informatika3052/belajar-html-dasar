@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+body {
+    background-color: rgb(241, 233, 233);
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linier infinite;
+    position: fixed;
+}
+.navbar h2 {
+    font-size: 40px;
+    padding-left: 40px;
+}
+.navbar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(50px);
+}
+.navbar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(50px);
+}
+
+
+/* scrollbar */
+
+
+.scrollbar{
+    padding: 100px;
+}
+.scrollbar p, .scrollbar h3 {
+    color: rgb(24, 11, 11);
+}
+/* progress-bar */
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linier infinite;
+    transition: 2s ease;
+}
+
+@keyframes animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+.progress-bar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+.progress-bar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}

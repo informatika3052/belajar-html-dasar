@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+
+.crut {
+    padding: 70px;
+
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+.scroll-path{
+    /* position: fixed;
+    top: 0;
+    right: 0; */
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #008aff,#00e1ff);
+    animation: animate 5s linier infinite;
+}
+/* .scroll-path::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+}
+.scroll-path::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(10px);
+} */
+.scroll-path .nav {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+/* scroll-path end*/
+
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    animation: animate 5s linier infinite;
+    transition: 2s ease;
+}
+
+@keyframes animate {
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+.progress-bar::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+.progress-bar::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #008aff,#00ffe7);
+    filter: blur(30px);
+}
+
+
+
+
+.move{
+    margin: 50px auto;
+    width: 500px;
+    height: 500px;
+    background-color: whitesmoke;
+}

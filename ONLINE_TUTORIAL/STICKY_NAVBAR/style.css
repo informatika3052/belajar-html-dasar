@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+body {
+    min-height: 200vh;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    z-index: 999;
+    transition: 0.5s;
+}
+header.sticky {
+    padding: 5px 100px;
+    background: #835151;
+}
+
+/* LOGO */
+
+header .logo {
+    
+    font-weight: 800;
+    color: rgb(39, 12, 12);
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+.buble{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    border-radius: 50%;
+    border: 5px solid rgb(253, 168, 136);
+    box-shadow: -2px 3px 10px rgba(0,0,0,0.5);
+    z-index: 10;
+    animation: bounce 2s linear infinite;
+}
+.buble::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -150%;
+    left: -220%;
+    border-radius: 50%;
+    border: 5px solid rgb(253, 168, 136);
+    box-shadow: -2px 3px 10px rgba(0,0,0,0.5);
+    z-index: 11;
+    animation: bounce 3s linear infinite;
+}
+.buble::after{
+    content: '';
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 45%;
+    left: -440%;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 172, 142);
+    box-shadow: -2px 3px 10px rgba(0,0,0,0.5);
+    z-index: 10;
+    animation: bouncess 8s linear infinite;
+}
+
+
+/* END LOGO */
+
+/* Name */
+.name {
+    position: absolute;
+    width: 400px;
+    height: 300;
+    top: 50%;
+    left: 5%;
+    z-index: 22;
+    
+}
+.name h2 {
+    padding: 10px;
+    margin-left: 40px;
+    font-size: 1.5em;
+}
+.name  span {
+    margin-left: 40px;
+    font-size: 4.5em;
+    font-weight: 500;
+   
+    text-shadow: 3px 3px 10px rgba(255, 255,255, 0.5);
+    
+}
+
+header ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: rgb(39, 12, 12);
+    transition: 0.3s;
+}
+header ul li a:hover {
+    color: aliceblue;
+}
+
+
+/* BANNER  */
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/1.jpg);
+    background-size: cover;
+    background-position: -2px 0 ;
+}
+
+.banner-2 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url(img/2.jpg);
+    background-size: cover;
+    background-position: -5px 0 ;
+}
+/* .banner-2::after {
+    Senyum yang ringan terkadang lahir dari perjuangan yang HEBAT
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-color: rgb(34, 32, 30);
+    border-bottom-left-radius: 100%;
+    opacity: 0.5;
+} */
+
+
+
+
+
+@keyframes bounce{
+    
+0% {
+  
+    transform: translateY(0px);
+}
+50% {
+    
+    transform: translateY(10px);
+}
+100% {
+  
+    transform: translateY(0px);
+}
+}
+
+@keyframes bouncess {
+    0%,30%,70%{
+        transform: translateY(0);
+    }
+    10%,50%,90%{
+        transform: translateY(8px);
+    }
+
+}

@@ -1,0 +1,144 @@
+@import url('https://fonts.googlapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body{
+    background: black;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 150px; 
+}
+section header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section header .logo {
+    position: relative;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    z-index: 10;
+}
+section header .toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(img/menu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+.bird{
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    max-height: 80%;
+    z-index: 121;
+}
+
+.content {
+    position: relative;
+    max-width: 600px;
+    z-index: 10;
+}
+
+.content h2{
+    font-size: 3em;
+    color: #fff;
+    line-height: 2em;
+}
+.content h2 span{
+    font-weight: 800;
+    font-size: 3em;
+    letter-spacing: 3px;
+}
+.content p {
+    color: #fff;
+    margin-top: -15px;
+    line-height: 2;
+}
+.content a{
+    display:inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-top:20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+.sci {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background: #fff;
+}
+.sci li {
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    transform: scale(0.5);
+}
+.textBlocks{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+.block{
+    position: relative;
+    padding: 20px;
+    margin-right: 40px;
+    max-width: 500px;
+    background: rgb(0, 255, 0,0.2);
+}
+.block h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.block h3{
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+.block p{
+    color: #fff;
+}

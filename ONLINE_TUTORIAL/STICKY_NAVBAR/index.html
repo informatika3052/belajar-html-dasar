@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <div class="name">
+        <h2>HELLO I AM</h2>
+        <span>SangSloop</span>
+    </div>
+    <div class="buble"></div>
+    <section class="banner"></section>
+    <section class="banner-2"></section>
+    <script type="text/javascript">
+        let header1 = document.querySelector('header');
+        window.addEventListener('scroll', function () {
+            header1.classList.toggle("sticky", window.scrollY > 0);
+        });
+    </script>
+</body>
+
+</html>
