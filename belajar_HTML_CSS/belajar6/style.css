@@ -1,0 +1,170 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    background-color: #58ad26;
+    position: relative;
+    font-size: 18px;
+    overflow: hidden;
+}
+.heading {
+    overflow: hidden;
+}
+.container{
+    width: 80%;
+    background: lightgreen;
+    margin: 50px 100px;
+    overflow:  hidden;
+}
+.container h1 {
+    letter-spacing: 2px;
+    transition: all 5s;
+    animation: au 7s infinite ease;
+    font-family: cursive;
+}
+
+@keyframes au{
+    0% {
+        transform: translateX(-200px);
+    }
+    50% {
+        transform: scale(0.6) translateX(45 0px);
+    }
+    
+    100% {
+        transform: translateX(1150px) scale(1);
+    }
+}
+
+
+
+
+
+
+.kotak {
+    display: flex;
+    justify-content: center;
+}
+.kotak h2{
+    font-size: 5em;
+    font-family: cursive;
+    animation: ai 5s ease-in 1s infinite;
+    position: absolute;
+}
+
+@keyframes ai {
+    0%{
+        transform: translateY(-100px);
+    }
+    30%{
+        transform: translateY(100px);
+    }
+    40%{
+        transform: translateY(50px);
+    }
+    70%{
+        transform: translateY(100px);
+    }
+    80% {
+        transform: translate(-50px ,100px)
+    }
+    100%{
+        transform: translate(1000px,100px);
+        font-size: 4em;
+    }
+}
+
+
+
+ 
+
+
+
+
+
+
+
+.kotak2{
+    width: 100px;
+    height: 100px;
+    background-color: #58ad26;
+    margin: 100px auto;
+    animation: aa 5s ease-in infinite;
+    border-radius: 50%;
+    /* animation-timing-function: steps(2, end); */
+}
+@keyframes aa {
+    0%{
+        transform: translateY(-100px);
+    }
+    30%{
+        transform: translateY(100px);
+    }
+    40%{
+        transform: translateY(20px);
+    }
+    80%{
+        transform: translateY(130px);
+    }
+    100% {
+        transform: translate(1200px,130px);
+    }
+    
+}
+.kotak2::before {
+    content: '';
+    background-color: black;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 20%;
+    left: -80%;
+    border-radius: 50%;
+}
+.kotak2::after {
+    content: '';
+    background-color: black;
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    top: -20%;
+    right: -140%;
+    border-radius: 50%;
+}
+
+
+
+.kotak-miring {
+    width: 450px;
+    height: 100px;
+    background:linear-gradient(to right, rebeccapurple,rgb(90, 47, 133),rgb(51, 27, 75)) ;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+    animation: ao 5s ease-out 4s infinite;
+
+}
+
+
+
+@keyframes ao {
+    from {
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(3000px) scale(0);
+    }
+}
+
+
+
+
+
+
+

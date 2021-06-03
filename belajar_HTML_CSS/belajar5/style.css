@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.navbar{
+    width: 100%;
+    overflow: hidden;
+    background: #FAF3B5;
+}
+.navbar img {
+    width: 70px;
+    margin-left: 80px;
+    
+}
+.navbar ul li {
+    display: block;
+    font-family: cursive;
+    font-size: 22px;
+    margin-left: 600px;
+    
+}
+.navbar ul li a{
+    color: black;
+}
+.navbar ul li a:hover{
+    color: blue;
+}
+.centerr{
+    background: #FAF3B5;
+    padding-left: 12px;
+    overflow: auto;
+}
+
+.profil p {
+    font-size: 28px;
+    display: inline-block;
+    float: right;
+    margin-right: 10px;
+    background-color: darkred;
+    overflow: auto;
+}
+
+.profil h1{
+    text-align: center;
+    padding-top: 160px;
+    font-family: cursive;
+    margin: 
+    
+}
+
+.profil h1::after{
+    content: '';
+    background: black;
+    display: block;
+    height: 3px;
+    width: 380px;
+    margin: 13px auto ;
+}
+.profil img{
+    float:right;
+    width: 300px;
+    margin-top: 100px;
+    padding-top: 12px;
+    margin-left: 120px
+}
+.row h3{
+    font-size: 20px;
+    font-family: cursive;
+    margin-top: 34px;
+    padding-left: 5px;
+}
+.daftar{
+    width: 400px;
+    margin-top: 30px;
+}
+.row button{
+    font-size: 18;
+    font-family: cursive;
+    border-radius: 45%;
+    background-color: aqua;
+    margin-top: 32px;
+    
+}
+.row button:hover{
+    background: #6057DF;
+}

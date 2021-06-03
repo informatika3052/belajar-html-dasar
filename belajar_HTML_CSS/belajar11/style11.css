@@ -1,0 +1,395 @@
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    background-color: white;
+
+}
+
+.logo {
+    background-image: url(Sang.png);
+    width: 300px;
+    height: 110px;
+    background-size: cover;
+    float: left;
+}
+
+.navbar ul li {
+    display: inline-block;
+    float: right;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-size: 19px;
+    padding-right: 5;
+
+
+}
+
+.navbar ul li a {
+    font-family: stikaheading;
+    text-decoration: none;
+    color: blueviolet;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}
+
+
+.box-login input {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 700px;
+    height: 10px;
+    box-shadow: 0 0 10px 1px #6B6259;
+    border-radius: 20px;
+}
+
+.mainbar {
+    width: 100%;
+    height: 750px;
+    background-image: url(david-marcu-78A265wPiO4-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -10px;
+    border-bottom: 2px solid silver;
+    background-attachment: fixed;
+
+}
+
+.main h2 {
+    padding-left: 25px;
+    padding-top: 100px;
+    font-family: stikaheading;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+.main p {
+    font-size: 20px;
+    padding-left: 25px;
+    margin-top: 15px;
+
+}
+
+.tengah {
+    background-color: #D7D7D7;
+}
+
+.main-box {
+    width: 800px;
+    padding: 5px;
+    border-right: 1px solid silver;
+
+}
+
+.main-box .gunung1,
+.main-box .gunung2,
+.main-box .gunung3,
+.main-box .gunung4,
+.main-box .gunung5 {
+    padding-bottom: 70px;
+    border-bottom: 1px solid silver;
+}
+
+.main-box p {
+    font-size: 18px;
+    color: #000000;
+    font-family: stikaheading;
+}
+
+.gunung1 img {
+    margin: 5px;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    float: left;
+    padding-right: 10px;
+
+}
+
+.gunung2 img {
+    margin-top: 10px;
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+    float: right;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px 1px #6B6259;
+}
+
+.gunung3 img {
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    float: left;
+    padding-right: 10px;
+}
+
+.gunung4 img {
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    float: right;
+    padding-right: 10px;
+}
+
+.gunung5 img {
+    margin-top: 10px;
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    float: right;
+    padding-right: 10px;
+}
+
+.bar-bar {
+    background-image: url(../gunung/semeru.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+
+}
+
+.sosial h2 {
+    font-size: 40px;
+    text-align: center;
+    color: brown;
+}
+
+.image img {
+    width: 30px;
+    float: right;
+    margin-left: 15px;
+}
+
+.sosial img:hover {
+    color: teal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+
+
+/* Clear Fix Float*/
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
