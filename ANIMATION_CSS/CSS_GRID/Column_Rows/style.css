@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* grid template column digunakan untuk kolom */
+
+/* grid template row digunakan untuk baris */
+
+.container {
+    width: 800px;
+    height: 800px;
+    margin: 100px auto;
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: 200px auto 200px;
+}
+
+
+.item {
+    background-color: rgb(53, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(231, 63, 175);
+}

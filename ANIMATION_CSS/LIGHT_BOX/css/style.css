@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'avarabold';
+    src: url('../fonts/avara-webfont.woff') format('woff2'),
+         url('../fonts/avara-webfont.woff') format('woff');
+    
+}
+
+/* Style Utama */
+
+body {
+    font: 18px/36px 'avarabold','Arial Narrow','arial';
+    background-color: #ddd;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 50px auto;
+    text-align: center;
+    text-shadow: 1px 1px 2px whitesmoke;
+}
+
+.container {
+    width: 600px;
+    margin: auto;
+    padding: 30px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 3px 3px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}
+
+.gallery li {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid slategray;
+    float: left;
+    margin-right: 24px;
+    position: relative;
+}
+.gallery li span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    line-height: 120px;
+    text-align: center;
+    color: salmon;
+    text-shadow: 1px 1px 1px #ddd;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(0) rotate(0);
+}
+.gallery li a:hover span {
+    opacity: 1;
+    transform: scale(1) rotate(360deg);
+}
+
+
+
+/* Overlay */
+
+.overlay img {
+    width: 600px;
+    height: 600px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    border: 2px solid sienna;
+    
+    
+}
+.overlay {
+    width: 0;
+    height: 0;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: rgba(0,0,0,0);
+    transition: 0.8;
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    padding-bottom: 50px;
+    padding-top: 30px;
+ 
+}
+
+.overlay:target{
+    background: rgba(0,0,0,0.5);
+    width: auto;
+    height: auto;
+
+
+}
+
+
+.overlay:target img {
+    animation: zoomFade 1s;
+}
+
+.overlay:target a {
+    animation: zoomFadein 1s 1s forwards;
+}
+
+.overlay .close {
+    position: absolute;
+    width: 30px;
+    top: 3px;
+    left: 71%;
+    border: 3px solid brown;
+    border-radius: 50%;
+    color: lightgreen;
+    box-shadow: 1px 1px 2px rgba(255,255,255,0.5);
+    background-color: sienna;
+    text-decoration: none;
+    opacity: 0;
+}
+
+
+/* ANIMASI */
+
+
+
+@keyframes zoomFade{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate(360deg);
+        opacity: 1;
+
+    }
+}
+
+
+@keyframes zoomFadein{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) ;
+        opacity: 1;
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.clear {
+    clear: both;
+}

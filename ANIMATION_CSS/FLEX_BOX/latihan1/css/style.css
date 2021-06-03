@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    background-color: #bbb;
+}
+
+/* Latihan 1 */
+.container-satu {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.kolom-utama {
+    flex: 3;
+    order: 2;
+}
+
+
+.side-bar1 {
+    flex: 1;
+    order: 1;
+}
+
+
+.side-bar2 {
+    flex: 1;
+    order: 3;
+}
+
+
+/* Latihan 2 */
+
+.container-dua {
+    max-width: 1200px;
+    margin: 50px auto;
+
+}
+
+.layanan {
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+
+}
+
+.layanan.satu {
+    background-color: rgb(117, 117, 202);
+}
+
+.layanan.dua {
+    background-color: rgb(103, 179, 92);
+}
+
+.layanan.tiga {
+    background-color: rgb(224, 113, 156);
+}
+
+
+/* Latihan 3 */
+
+.container-tiga {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 50%;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+
+.container-empat {
+    max-width: 1200px;
+    margin: 100px auto;
+    display: flex;
+}
+
+.card {
+
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+    background-color: cadetblue;
+    overflow: hidden;
+    margin: 5px;
+    flex: 1;
+}
+
+.header {
+    height: 160px;
+    background-color: rgb(224, 174, 108);
+
+}
+
+.header img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card .content {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card.besar {
+    transform: scale(1.12);
+}
+
+
+
+/* Latihan 5 */
+
+
+.container-lima {
+    width: 500px;
+    height: 500px;
+    margin: 50px auto;
+    border: 3px solid black;
+    display: flex;
+}
+
+.kotak {
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    color: whitesmoke;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.kotak span {
+    margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+@media (min-width : 600px) {
+    .container-dua {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .layanan {
+        width: 30%;
+
+    }
+
+    .thumbnail {
+        width: 25%;
+    }
+}

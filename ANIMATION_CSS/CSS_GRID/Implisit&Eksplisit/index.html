@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Kolom Baris</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* grid template column digunakan untuk kolom */
+
+    /* grid template row digunakan untuk baris */
+
+    .container {
+        width: 800px;
+        height: 800px;
+        margin: 100px auto;
+        display: grid;
+        grid-template-columns: 200px auto 200px;
+        grid-template-rows: 200px auto 200px;
+    }
+
+
+    .item {
+        background-color: rgb(53, 235, 235);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item:nth-child(even) {
+        background-color: rgb(231, 63, 175);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </div>
+</body>
+
+</html>

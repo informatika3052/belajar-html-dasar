@@ -1,0 +1,501 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*     font-family: 'Chelsea Market', cursive;
+
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Miltonian Tattoo', cursive;
+
+    font-family: 'Special Elite', cursive; */
+body {
+    background-color: rgb(143, 102, 69);
+    font-size: 18px;
+    font-family: 'Special Elite', Arial, Helvetica, sans-serif;
+    margin: 50px;
+}
+
+.container {
+    display: grid;
+    gap: 10px;
+}
+
+
+/* Header  */
+.header {
+    display: grid;
+    grid-template-areas: 'hero hero feature-1''hero hero feature-2'
+    ;
+    gap: 1px;
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 350px;
+    background-image: url(../img/gambar1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    border-top-left-radius: 3px;
+
+}
+
+.hero h2,
+.hero p {
+    display: none;
+}
+
+
+.features {
+    background-color: black;
+    color: white;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    cursor: pointer;
+
+}
+
+
+.feature-1 {
+    grid-area: feature-1;
+    background-image: url(../img/gambar2.png);
+    background-size: cover;
+}
+
+.feature-2 {
+    grid-area: feature-2;
+    background-image: url(../img/gambar3.png);
+    background-size: cover;
+    border-top: 2px solid black;
+}
+
+.features .price {
+    font-size: 2em;
+    font-weight: 100;
+}
+
+/*  Akhir Header  */
+
+
+
+
+/* Navigation */
+
+.menu {
+    order: -1;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+
+}
+
+.menu .brand {
+    font-size: 1.2em;
+}
+
+.menu ul {
+    display: grid;
+    list-style: none;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 5px;
+
+}
+
+.menu a {
+    display: block;
+    background-color: #111;
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 5px;
+}
+
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    top: -4px;
+    left: -5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: rgb(241, 64, 173);
+    z-index: 2;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+/* Hamburger Menu Animation*/
+
+.menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+}
+
+
+.menu-toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked~span:nth-child(2) {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked~span:nth-child(4) {
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked~span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+}
+
+/* Services */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+
+
+}
+
+.service {
+    background-color: ivory;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid slategray;
+    border-radius: 3px;
+    box-shadow: 2px 2px 4px rgba(143, 102, 69, 0.6);
+    margin-top: 50px;
+}
+
+/* Gallert */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.gallery h2 {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    /* grid-column-satrt: 1 / -1 */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.gallery img {
+    border: 2px solid rgb(44, 38, 38);
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.gallery img:hover {
+    transform: translateY(-1px) scale(1.1);
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 1024px) {
+    .menu {
+        order: inherit;
+        grid-template-columns: 1fr;
+    }
+
+    .menu .brand {
+        display: none;
+    }
+
+    .hero h2,
+    .hero p {
+        display: block;
+        color: whitesmoke;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    .hero {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        order: -1;
+        justify-items: end;
+    }
+
+    .menu ul {
+        display: flex;
+        background-color: rgb(44, 38, 38);
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1;
+        padding-top: 25px;
+        transform: translatey(-100%);
+        transition: all 0.7s;
+        opacity: 0;
+    }
+
+    .menu ul.slide {
+        transform: translateY(0);
+        opacity: 1;
+
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 500px) {
+    .header {
+        grid-template-areas: 'hero'
+            'feature-1'
+            'feature-2';
+
+
+    }
+
+    .features {
+        height: 300px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.los {
+    margin: 50px auto;
+    width: 500px;
+    height: 385px;
+    background-color: rgb(231, 243, 57);
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.los h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 40%;
+    font-family: cursive;
+}
+
+.los hr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+
+    top: 105px;
+    left: 250px;
+    position: absolute;
+}
+
+.los img {
+    background-image: url(../img/87.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 500px;
+    position: absolute;
+    top: 10px;
+    left: -150px;
+    transition: 1s;
+}
+
+.los img:hover {
+    transform: scale(1.1) translateY(-10px);
+} */
